@@ -1,0 +1,21 @@
+# Ignora tudo por padrão
+*
+
+# Libera apenas as suas pastas de configuração
+!alacritty/
+!alacritty/**
+!hypr/
+!hypr/**
+!rofi/
+!rofi/**
+!waybar/
+!waybar/**
+!yazi/
+!yazi/**
+!zed/
+!zed/**
+
+!.gitignore
+
+# Backups automáticos (ex: Alacritty hot-reload)
+*.bak

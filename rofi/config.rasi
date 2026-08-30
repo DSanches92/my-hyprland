@@ -1,0 +1,40 @@
+/* rofi/config.rasi — tema do launcher de aplicativos ($mainMod+D) e do
+ * rofi-pass ($mainMod+P), definidos no hyprland.conf.
+ * Paleta Catppuccin Macchiato, mesma do resto dos dotfiles. */
+
+configuration {
+    modi: "drun,run";
+    show-icons: true;
+    font: "GeistMono Nerd Font 12";
+}
+
+* {
+    background:     #24273aff;
+    background-alt: #1e1e2eff;
+    foreground:     #cad3f5ff;
+    selected:       #c6a0f6ff;
+    selected-text:  #24273aff;
+    border-color:   #c6a0f6ff;
+}
+
+window {
+    background-color: @background;
+    border: 1px;
+    border-color: @border-color;
+    border-radius: 6px;
+    width: 480px;
+}
+
+element selected {
+    background-color: @selected;
+    text-color: @selected-text;
+}
+
+inputbar {
+    children: [prompt, entry];
+    padding: 8px;
+}
+
+entry {
+    placeholder: "Buscar...";
+}

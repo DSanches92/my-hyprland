@@ -1,0 +1,145 @@
+[general]
+working_directory = "None"
+live_config_reload = true
+
+[env]
+TERM = "xterm-256color"
+WINIT_X11_SCALE_FACTOR = "1.0"
+
+[window]
+dimensions = { columns = 100, lines = 30 }
+dynamic_padding = true
+decorations = "Full"
+opacity = 0.8
+title = "Alacritty@DSanches"
+class = { instance = "Alacritty", general = "Alacritty" }
+decorations_theme_variant = "Dark"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[font]
+normal = { family = "GeistMono Nerd Font Mono", style = "Regular" }
+bold   = { family = "GeistMono Nerd Font Mono", style = "Bold" }
+italic = { family = "GeistMono Nerd Font Mono", style = "Italic" }
+bold_italic = { family = "GeistMono Nerd Font Mono", style = "Bold Italic" }
+size = 11.0
+offset = { x = 0, y = 1 }
+builtin_box_drawing = true
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+vi_mode_style = { shape = "Block", blinking = "Off" }
+blink_interval = 600
+blink_timeout = 0
+unfocused_hollow = true
+thickness = 0.15
+
+[colors]
+draw_bold_text_with_bright_colors = true
+transparent_background_colors = true
+
+[colors.primary]
+background     = "#1E1E2E"
+foreground     = "#CDD6F4"
+dim_foreground = "#7F849C"
+bright_foreground = "#CDD6F4"
+
+[colors.cursor]
+text   = "#1E1E2E"
+cursor = "#F5E0DC"
+
+[colors.vi_mode_cursor]
+text   = "#1E1E2E"
+cursor = "#B4BEFE"
+
+[colors.search.matches]
+foreground = "#1E1E2E"
+background = "#A6ADC8"
+
+[colors.search.focused_match]
+foreground = "#1E1E2E"
+background = "#A6E3A1"
+
+[colors.footer_bar]
+foreground = "#1E1E2E"
+background = "#A6ADC8"
+
+[colors.hints.start]
+foreground = "#1E1E2E"
+background = "#F9E2AF"
+
+[colors.hints.end]
+foreground = "#1E1E2E"
+background = "#A6ADC8"
+
+[colors.selection]
+text       = "#1E1E2E"
+background = "#F5E0DC"
+
+[colors.normal]
+black   = "#45475A"
+red     = "#F38BA8"
+green   = "#A6E3A1"
+yellow  = "#F9E2AF"
+blue    = "#89B4FA"
+magenta = "#F5C2E7"
+cyan    = "#94E2D5"
+white   = "#BAC2DE"
+
+[colors.bright]
+black   = "#585B70"
+red     = "#F38BA8"
+green   = "#A6E3A1"
+yellow  = "#F9E2AF"
+blue    = "#89B4FA"
+magenta = "#F5C2E7"
+cyan    = "#94E2D5"
+white   = "#A6ADC8"
+
+[[colors.indexed_colors]]
+index = 16
+color = "#FAB387"
+
+[[colors.indexed_colors]]
+index = 17
+color = "#F5E0DC"
+
+[mouse]
+hide_when_typing = true
+bindings = [
+  { mouse = "Middle", mods = "None", action = "PasteSelection" },
+]
+
+[[hints.enabled]]
+hyperlinks      = true
+post_processing = true
+persist         = false
+command         = { program = "cmd", args = ["/c", "start", ""] }
+mouse.enabled   = true
+binding         = { key = "O", mods = "Control|Shift" }
+regex = "(https?://|ftp://|mailto:|ssh:|git://|gemini://|gopher://)[^\\s<>\"'()]+"
+
+[keyboard]
+bindings = [
+  { key = "Paste", mods = "None", action = "Paste" },
+  { key = "Copy", mods = "None", action = "Copy" },
+  { key = "L", mods = "Control", action = "ClearLogNotice" },
+  { key = "V", mods = "Control|Shift", action = "Paste" },
+  { key = "C", mods = "Control|Shift", action = "Copy" },
+  { key = "F", mods = "Control|Shift", action = "SearchForward" },
+  { key = "B", mods = "Control|Shift", action = "SearchBackward" },
+  { key = "C", mods = "Control|Shift", mode = "Vi", action = "ClearSelection" },
+  { key = "Key0", mods = "Control", action = "ResetFontSize" },
+  { key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
+  { key = "=", mods = "Control", action = "IncreaseFontSize" },
+  { key = "Minus", mods = "Control", action = "DecreaseFontSize" },
+  { key = "Key0", mods = "Control", action = "ResetFontSize" },
+  { key = "PageUp", mods = "Shift", mode = "~Alt", action = "ScrollPageUp" },
+  { key = "PageDown", mods = "Shift", mode = "~Alt", action = "ScrollPageDown" },
+  { key = "Home", mods = "Shift", mode = "~Alt", action = "ScrollToTop" },
+  { key = "End", mods = "Shift", mode = "~Alt", action = "ScrollToBottom" },
+  { key = "Space", mods = "Control|Shift", action = "ToggleViMode" },
+  { key = "Return", mods = "Shift", chars = "\u001B\r" },
+]

@@ -1,0 +1,50 @@
+// waybar/config.jsonc — barra de status: workspaces, relógio, atualizações
+// pendentes do sistema, volume, rede e área de notificação (tray).
+{
+  "layer": "top",
+  "position": "bottom",
+  "height": 22,
+  "spacing": 4,
+
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["custom/updates", "pulseaudio", "network", "tray"],
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "default": ""
+    }
+  },
+
+  "clock": {
+    "format": "{:%d/%m/%Y  %H:%M}",
+    "tooltip-format": "{:%A, %d de %B}"
+  },
+
+  "custom/updates": {
+    "exec": "~/.config/waybar/scripts/arch_updates.sh",
+    "interval": 900,
+    "format": " {}"
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟 mudo",
+    "format-icons": {
+      "default": ["", "", ""]
+    },
+    "on-click": "pavucontrol"
+  },
+
+  "network": {
+    "format-wifi": "󰤨 {essid}",
+    "format-ethernet": "󰈀 conectado",
+    "format-disconnected": "󰤭 desconectado",
+    "on-click": "nm-connection-editor"
+  },
+
+  "tray": {
+    "spacing": 8
+  }
+}

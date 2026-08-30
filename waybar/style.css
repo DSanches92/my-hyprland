@@ -1,0 +1,38 @@
+/* Paleta Catppuccin Macchiato, mesma do resto dos dotfiles */
+
+* {
+    font-family: "GeistMono Nerd Font Mono";
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: #24273a;
+    color: #cad3f5;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    color: #6e738d;
+}
+
+#workspaces button.active {
+    color: #c6a0f6;
+}
+
+#workspaces button.urgent {
+    color: #ed8796;
+}
+
+#clock,
+#pulseaudio,
+#network,
+#custom-updates,
+#tray {
+    padding: 0 10px;
+    color: #cad3f5;
+}
+
+#custom-updates {
+    color: #f4dbd6;
+}
