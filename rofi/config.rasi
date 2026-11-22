@@ -1,5 +1,5 @@
-/* rofi/config.rasi — tema do launcher de aplicativos ($mainMod+D) e do
- * rofi-pass ($mainMod+P), definidos no hyprland.conf.
+/* rofi/config.rasi — tema do launcher de aplicativos ($mainMod+D),
+ * definido no hypr/hyprland.lua.
  * Paleta Catppuccin Macchiato, mesma do resto dos dotfiles. */
 
 configuration {

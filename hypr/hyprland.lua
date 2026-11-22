@@ -121,9 +121,6 @@ hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 -- launcher de aplicativos
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("rofi -show drun -show-icons"))
 
--- busca de senhas (requer os pacotes "pass" e "rofi-pass")
-hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("rofi-pass"))
-
 -- abrir aplicativos específicos
 hl.bind(mainMod .. " + SHIFT + T", hl.dsp.exec_cmd("thunar"))
 hl.bind(mainMod .. " + Y",         hl.dsp.exec_cmd(terminal .. " -e yazi"))

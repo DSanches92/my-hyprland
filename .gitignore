@@ -20,8 +20,13 @@
 !qt6ct/**
 !gtk-3.0/
 !gtk-3.0/**
+!gtk-4.0/
+!gtk-4.0/**
+!zsh/
+!zsh/**
 
 !.gitignore
+!install.sh
 
 # Backups automáticos (ex: Alacritty hot-reload)
 *.bak
