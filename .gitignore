@@ -27,6 +27,8 @@
 
 !.gitignore
 !install.sh
+!README.md
+!CLAUDE.md
 
 # Backups automáticos (ex: Alacritty hot-reload)
 *.bak
