@@ -14,6 +14,12 @@
 !yazi/**
 !zed/
 !zed/**
+!sddm/
+!sddm/**
+!qt6ct/
+!qt6ct/**
+!gtk-3.0/
+!gtk-3.0/**
 
 !.gitignore
 
